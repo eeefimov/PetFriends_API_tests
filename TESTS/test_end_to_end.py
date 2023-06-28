@@ -5,9 +5,10 @@ from params import params_add_pet_nophoto_valid, params_add_pet_photo_valid
 
 pets = PetFriends()
 
-"""Creat pet without photo, update pet info, delete pet"""
+
 @pytest.mark.parametrize("name, animal_type, age", params_add_pet_nophoto_valid)
 def test_Add_pet_simple_Update_info_Delete(setup_key, name, animal_type, age):
+    """Creat pet without photo, update pet info, delete pet"""
     header = setup_key
     status, result = pets.post_pet_without_photo(header, name, animal_type, age)
     assert status == 200
@@ -27,9 +28,10 @@ def test_Add_pet_simple_Update_info_Delete(setup_key, name, animal_type, age):
     print(status, "THIS is THE END")
 
 
-"""create pet without photo, add photo, delete"""
+
 @pytest.mark.parametrize("name, animal_type, age, pet_photo", params_add_pet_photo_valid)
 def test_Add_pet_simple_Update_info_Update_photo_Delete(setup_key, name, animal_type, age, pet_photo):
+    """create pet without photo, add photo, delete"""
     header = setup_key
     status, result = pets.post_pet_without_photo(header, name, animal_type, age)
     assert status == 200
@@ -45,9 +47,10 @@ def test_Add_pet_simple_Update_info_Update_photo_Delete(setup_key, name, animal_
     print(status, "THIS is THE END")
 
 
-"""create pet with photo, update info, update photo, delete"""
+
 @pytest.mark.parametrize("name, animal_type, age, pet_photo", params_add_pet_photo_valid)
 def test_Add_pet_Update_info_Update_photo_Delete(setup_key, name, animal_type, age, pet_photo):
+    """create pet with photo, update info, update photo, delete"""
     header = setup_key
     status, result = pets.post_pet_with_photo(header, name, animal_type, str(age), pet_photo)
     assert status == 200

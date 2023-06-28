@@ -4,8 +4,9 @@ import pytest
 
 pets = PetFriends()
 
-"""Valid data"""
+
 def test_update_pet_info_valid(setup_key_pet_id):
+    """Valid data"""
     header, pet_id = setup_key_pet_id
     name = "name"
     animal_type = "animal_type"
@@ -22,8 +23,8 @@ def test_update_pet_info_valid(setup_key_pet_id):
     print(result)
 
 
-"""invalid key, valid data"""
 def test_update_pet_info_invalid_key(setup_key_pet_id):
+    """invalid key, valid data"""
     header, pet_id = setup_key_pet_id
     name = "name"
     animal_type = "animal_type"
@@ -35,9 +36,9 @@ def test_update_pet_info_invalid_key(setup_key_pet_id):
     print(result)
 
 
-"""Valid key, INvalid id"""
 @pytest.mark.parametrize("id, expected", params_id_invalid)
 def test_update_pet_invalid_id(setup_key_pet_id, id, expected):
+    """Valid key, INvalid id"""
     header, _ = setup_key_pet_id
     pet_id = id
     name = "name"
@@ -49,8 +50,8 @@ def test_update_pet_invalid_id(setup_key_pet_id, id, expected):
     print(result)
 
 
-"""Valid key, None id"""
 def test_update_pet_none_id(setup_key):
+    """Valid key, None id"""
     header = setup_key
     pet_id = None
     name = "name"

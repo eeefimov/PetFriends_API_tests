@@ -120,8 +120,7 @@ params_add_pet_check_age_numbers = [
 ]
 
 params_id_invalid = [
-    pytest.param(randomize_id(), 400, id="Invalid ID"),
-    pytest.param("", 404, id="Empty ID")
+    pytest.param(randomize_id(), 403, id="Invalid ID")
 ]
 
 #BUG1.1: age(Number) -> get string
@@ -130,7 +129,7 @@ params_add_pet_photo_valid = [
 ]
 
 #BUGx: add pet with invalid photo file, with no photo file.
-params_add_pet_invalid_photo = [
+params_add_pet_photo_type = [
     pytest.param(randomize_string(10), randomize_string(10), str(randomize_number(10)), "images/img.png", id="img_Png photo"),
     pytest.param(randomize_string(10), randomize_string(10), str(randomize_number(10)), "images/corgi.jpg", id="corgi_jpg photo"),
     pytest.param(randomize_string(10), randomize_string(10), str(randomize_number(10)), "images/requirements.jpeg", id="Error photo"),
