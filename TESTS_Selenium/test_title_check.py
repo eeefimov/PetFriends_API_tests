@@ -19,6 +19,7 @@ def test_pages_title(setup):
 
     wait = WDW(setup, 2)
     wait.until(EC.title_is(new_user_title))
+    
     assert setup.title == new_user_title
     setup.find_element(By.LINK_TEXT, "У меня уже есть аккаунт").click()
 
@@ -30,4 +31,5 @@ def test_pages_title(setup):
     setup.find_element(By.CSS_SELECTOR, "input#pass").send_keys(valid_password)
     setup.find_element(By.CSS_SELECTOR, "div:nth-of-type(3) > button").click()
 
+    setup.implicitly_wait(10)
     assert setup.title == all_pets_title
