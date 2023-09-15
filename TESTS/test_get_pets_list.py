@@ -1,4 +1,4 @@
-from API_Logic.GetList_upd import PetFriendsGetList
+from API_Logic.GetList import PetFriendsGetList
 import pytest
 import allure
 from TESTS.params import params_filter_valid, params_filter_invalid, params_filter_methods
