@@ -37,8 +37,6 @@ jobs:
         path: ./allure-results
 
   report:
-    needs: build
-
     runs-on: ubuntu-latest
 
     steps:
