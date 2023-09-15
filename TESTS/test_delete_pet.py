@@ -1,4 +1,4 @@
-from API_Logic.DeletePet_upd import PetFriendsDeletePet
+from API_Logic.DeletePet import PetFriendsDeletePet
 import allure
 import pytest
 
