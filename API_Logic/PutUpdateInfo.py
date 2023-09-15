@@ -1,5 +1,5 @@
-from PetFriendsV3.API_Logic.PetFriends import PetFriends
-from PetFriendsV3.TESTS.params import randomize_number, randomize_string
+from API_Logic.PetFriends import PetFriends
+from TESTS.params import randomize_number, randomize_string
 
 
 class PetFriendUpdatePet(PetFriends):
