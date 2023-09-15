@@ -1,4 +1,4 @@
-from PetFriendsV3.API_Logic.PetFriends import PetFriends
+from API_Logic.PetFriends import PetFriends
 
 
 class PetFriendsGetKey(PetFriends):
