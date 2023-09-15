@@ -1,5 +1,5 @@
-from PetFriendsV3.API_Logic.GetList import PetFriendsGetList
-from PetFriendsV3.TESTS.params import randomize_number
+from API_Logic.GetList import PetFriendsGetList
+from TESTS.params import randomize_number
 
 
 class PetFriendsDeletePet(PetFriendsGetList):
