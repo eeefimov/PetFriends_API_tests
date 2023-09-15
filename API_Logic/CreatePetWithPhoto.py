@@ -1,4 +1,4 @@
-from PetFriendsV3.API_Logic.CreatePetSimple import PetFriendsCreatePetSimple
+from API_Logic.CreatePetSimple import PetFriendsCreatePetSimple
 
 
 class PetFriendCreatePetWithPhoto(PetFriendsCreatePetSimple):
