@@ -1,6 +1,6 @@
 import allure
 import pytest
-from API_Logic.CreatePetSimple_upd import PetFriendsCreatePetSimple
+from API_Logic.CreatePetSimple import PetFriendsCreatePetSimple
 from TESTS.params import params_add_pet_nophoto_valid, params_add_pet_empty_fields, params_add_pet_nophoto_invalid_key
 
 pf = PetFriendsCreatePetSimple()
