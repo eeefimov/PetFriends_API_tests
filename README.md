@@ -19,9 +19,14 @@ The API documentation can be found [here](https://petfriends.skillfactory.ru/api
 
 You can find our test cases and track issues in our [Google Sheets document](https://docs.google.com/spreadsheets/d/1Q1qjP4xNNqfmabxxUShZDmxZhvL3y1KzYyW1J2LAIM4/edit?usp=sharing).
 
+## Tests run without report
+[![Python application](https://github.com/eeefimov/PetFriends_API_tests/actions/workflows/run_tests.yml/badge.svg?branch=master)](https://github.com/eeefimov/PetFriends_API_tests/actions/workflows/run_tests.yml)
+
+## Tests Allure report
+[![pages-build-deployment](https://github.com/eeefimov/PetFriends_API_tests/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/eeefimov/PetFriends_API_tests/actions/workflows/pages/pages-build-deployment)
+
 ## Check Allure report
 You can check the Allure report on this [report](https://eeefimov.github.io/PetFriends_API_tests/).
-
 
 ## How to Execute Locally
 
