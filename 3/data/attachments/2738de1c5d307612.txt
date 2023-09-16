@@ -1,0 +1,4 @@
+
+ {'_id': '', 'age': '10', 'animal_type': 'BcSYxbAeDd', 'created_at': '1694861236.8039272', 'id': 'bf3dc17f-b66c-499d-98de-9097ce627ca9', 'name': 'uRZbaAXkpN', 'pet_photo': '', 'user_id': 'f9cb3212c6ea16115e81a25c10e4d8bb05427eb6a8578cb4d482ff28'} 
+
+200

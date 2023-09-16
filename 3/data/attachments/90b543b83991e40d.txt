@@ -1,0 +1,6 @@
+https://petfriends.skillfactory.ru/api/pets/qweweq
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>400 Bad Request</title>
+<h1>Bad Request</h1>
+<p>Pet with this id wasn&#x27;t found!</p>
+

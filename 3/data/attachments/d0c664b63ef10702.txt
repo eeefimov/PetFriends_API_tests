@@ -1,0 +1,17 @@
+
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>400 Bad Request</title>
+<h1>Bad Request</h1>
+<p>The browser (or proxy) sent a request that this server could not understand.</p>
+ 
+
+400
+New pet is in the list: {'age': '6', 'animal_type': 'pwAoPHqKjr', 'created_at': '1694861218.231947', 'id': 'fbab6017-1849-4479-bba7-cf21dcf432a2', 'name': 'YfAEcdcfdD', 'pet_photo': ''}
+
+Number of my pets was: 100
+
+Pet is in the list
+
+ {'age': '10', 'animal_type': 'KdogIrimIH', 'created_at': '1694861218.231947', 'id': 'fbab6017-1849-4479-bba7-cf21dcf432a2', 'name': 'zLQrOvxgJJ', 'pet_photo': ''}
+
+ fbab6017-1849-4479-bba7-cf21dcf432a2
