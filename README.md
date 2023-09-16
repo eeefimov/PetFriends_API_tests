@@ -26,7 +26,7 @@ You can find our test cases and track issues in our [Google Sheets document](htt
 [![pages-build-deployment](https://github.com/eeefimov/PetFriends_API_tests/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/eeefimov/PetFriends_API_tests/actions/workflows/pages/pages-build-deployment)
 
 ## Check Allure report
-You can check the Allure report on this [report](https://eeefimov.github.io/PetFriends_API_tests/).
+You can check the Allure report on this [report](https://eeefimov.github.io/PetFriends_API_tests/3/).
 
 ## How to Execute Locally
 
