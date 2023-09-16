@@ -1,0 +1,504 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Sat Sep 16 02:56:18 CEST 2023","Sat Sep 16 02:56:18 CEST 2023","239","TESTS","Create Pet","TestCreatePet","","","Create Pet with Photo - Different Photo Types","
+    Attempt to create a pet with a photo using different photo types (e.g., PNG).
+
+    Precondition:
+    - User has a valid API key.
+    - Pet data is valid, but the photo type is different.
+
+    Expected result:
+    - Pet creation is successful, and the response returns HTTP status code 200.
+    "
+"passed","Sat Sep 16 02:56:23 CEST 2023","Sat Sep 16 02:56:24 CEST 2023","839","TESTS","Update Pet Information","TestUpdatePetInfo","","","Update Pet Information with Invalid Key","
+    Attempt to update a pet's information with an invalid API key.
+
+    Precondition:
+    - User is not authenticated.
+
+    Expected result:
+    - The request returns a 403 error code, and the pet's information is not updated.
+    "
+"passed","Sat Sep 16 02:55:49 CEST 2023","Sat Sep 16 02:55:49 CEST 2023","218","TESTS","Get API Key","TestGetApiKey","","","Get API key using invalid user values","
+    Get API Key using invalid user values as: password, email.
+
+    Precondition:
+    - User uses invalid email and password, empty fields, or empty password field.
+
+    Expected result:
+    - Response returns error code 403.
+    "
+"passed","Sat Sep 16 02:55:53 CEST 2023","Sat Sep 16 02:55:53 CEST 2023","230","TESTS","Get Pet List","TestGetPetList","","","Get Pet List with Invalid API Key","
+    Get the list of pets with an invalid API key and a valid filter as: my_pets.
+
+    Precondition:
+    - User has an invalid API key.
+    - The filter 'my_pets' is valid.
+
+    Expected result:
+    - Response returns HTTP status code 403.
+    "
+"passed","Sat Sep 16 02:55:48 CEST 2023","Sat Sep 16 02:55:48 CEST 2023","237","TESTS","Get API Key","TestGetApiKey","","","Get API key using invalid user values","
+    Get API Key using invalid user values as: password, email.
+
+    Precondition:
+    - User uses invalid email and password, empty fields, or empty password field.
+
+    Expected result:
+    - Response returns error code 403.
+    "
+"passed","Sat Sep 16 02:55:54 CEST 2023","Sat Sep 16 02:55:54 CEST 2023","218","TESTS","Get Pet List","TestGetPetList","","","Get Pet List without API Key","
+    Get the list of pets without an API key and a valid filter as: my_pets.
+
+    Precondition:
+    - User does not provide an API key.
+    - The filter 'my_pets' is valid.
+
+    Expected result:
+    - Response returns HTTP status code 403.
+    "
+"failed","Sat Sep 16 02:55:55 CEST 2023","Sat Sep 16 02:55:55 CEST 2023","218","TESTS","Get Pet List","TestGetPetList","","","Get Pet List with Invalid Filter","
+    Get the list of pets with an invalid filter as: ' ' (empty string).
+
+    Precondition:
+    - User has a valid API key.
+    - The filter is invalid (empty string).
+
+    Expected result:
+    - Response returns HTTP status code 422.
+    "
+"passed","Sat Sep 16 02:56:15 CEST 2023","Sat Sep 16 02:56:15 CEST 2023","246","TESTS","Create Pet","TestCreatePet","","","Create Pet with Photo - Valid Data","
+    Create a pet with a photo using valid data.
+
+    Precondition:
+    - User has a valid API key.
+    - Pet data is valid.
+
+    Expected result:
+    - Pet is successfully created, and the response returns HTTP status code 200.
+    "
+"failed","Sat Sep 16 02:55:58 CEST 2023","Sat Sep 16 02:55:58 CEST 2023","195","TESTS","Get Pet List","TestGetPetList","","","Get Pet List with Invalid Filter","
+    Get the list of pets with an invalid filter as: ' ' (empty string).
+
+    Precondition:
+    - User has a valid API key.
+    - The filter is invalid (empty string).
+
+    Expected result:
+    - Response returns HTTP status code 422.
+    "
+"failed","Sat Sep 16 02:55:54 CEST 2023","Sat Sep 16 02:55:54 CEST 2023","214","TESTS","Get Pet List","TestGetPetList","","","Get Pet List with Invalid Filter","
+    Get the list of pets with an invalid filter as: ' ' (empty string).
+
+    Precondition:
+    - User has a valid API key.
+    - The filter is invalid (empty string).
+
+    Expected result:
+    - Response returns HTTP status code 422.
+    "
+"failed","Sat Sep 16 02:56:16 CEST 2023","Sat Sep 16 02:56:17 CEST 2023","245","TESTS","Create Pet","TestCreatePet","","","Create Pet with Photo - Empty Fields","
+    Attempt to create a pet with a photo with empty fields.
+
+    Precondition:
+    - User has a valid API key.
+    - Pet data contains empty fields.
+
+    Expected result:
+    - Pet creation is denied, and the response returns HTTP status code 400.
+    "
+"passed","Sat Sep 16 02:55:48 CEST 2023","Sat Sep 16 02:55:49 CEST 2023","245","TESTS","Get API Key","TestGetApiKey","","","Get API key using invalid user values","
+    Get API Key using invalid user values as: password, email.
+
+    Precondition:
+    - User uses invalid email and password, empty fields, or empty password field.
+
+    Expected result:
+    - Response returns error code 403.
+    "
+"failed","Sat Sep 16 02:56:16 CEST 2023","Sat Sep 16 02:56:16 CEST 2023","248","TESTS","Create Pet","TestCreatePet","","","Create Pet with Photo - Empty Fields","
+    Attempt to create a pet with a photo with empty fields.
+
+    Precondition:
+    - User has a valid API key.
+    - Pet data contains empty fields.
+
+    Expected result:
+    - Pet creation is denied, and the response returns HTTP status code 400.
+    "
+"passed","Sat Sep 16 02:55:49 CEST 2023","Sat Sep 16 02:55:51 CEST 2023","1533","TESTS","Get Pet List","TestGetPetList","","","Get Pet List with Valid Filter","
+    Get the list of pets with a valid filter as: my_pets.
+
+    Precondition:
+    - User has a valid API key.
+    - The filter 'my_pets' is valid.
+
+    Expected result:
+    - Response returns HTTP status code 200.
+    "
+"failed","Sat Sep 16 02:55:56 CEST 2023","Sat Sep 16 02:55:56 CEST 2023","218","TESTS","Get Pet List","TestGetPetList","","","Get Pet List with Invalid Filter","
+    Get the list of pets with an invalid filter as: ' ' (empty string).
+
+    Precondition:
+    - User has a valid API key.
+    - The filter is invalid (empty string).
+
+    Expected result:
+    - Response returns HTTP status code 422.
+    "
+"passed","Sat Sep 16 02:55:47 CEST 2023","Sat Sep 16 02:55:48 CEST 2023","233","TESTS","Delete Pet","TestDeletePet","","","Delete pet with invalid key","
+    Attempt to delete a pet with an invalid API key.
+
+    Precondition:
+    - User is not authenticated (invalid API key is provided).
+
+    Expected result:
+    - The request returns a 403 error code, and the pet is not deleted.
+    "
+"passed","Sat Sep 16 02:55:45 CEST 2023","Sat Sep 16 02:55:46 CEST 2023","1187","TESTS","Delete Pet","TestDeletePet","","","Delete random valid pet","
+    Delete a random valid pet in the list of my_pets.
+
+    Precondition:
+    - User is authenticated and has a valid API key.
+    - There is at least one pet in the list.
+
+    Expected result:
+    - A random pet is successfully deleted, and the total number of pets is reduced by one.
+    "
+"passed","Sat Sep 16 02:56:09 CEST 2023","Sat Sep 16 02:56:10 CEST 2023","818","TESTS","Create Pet (Simple)","TestCreatePetSimple","","","Create pet with missing required fields","
+    Attempt to create a pet with missing required fields.
+
+    Precondition:
+    - User is authenticated and has a valid API key.
+
+    Expected result:
+    - The request returns a 400 error code.
+    "
+"passed","Sat Sep 16 02:56:19 CEST 2023","Sat Sep 16 02:56:19 CEST 2023","392","TESTS","Create Pet","TestCreatePet","","","Create Pet with Photo - Different Photo Types","
+    Attempt to create a pet with a photo using different photo types (e.g., PNG).
+
+    Precondition:
+    - User has a valid API key.
+    - Pet data is valid, but the photo type is different.
+
+    Expected result:
+    - Pet creation is successful, and the response returns HTTP status code 200.
+    "
+"failed","Sat Sep 16 02:56:18 CEST 2023","Sat Sep 16 02:56:19 CEST 2023","232","TESTS","Create Pet","TestCreatePet","","","Create Pet with Photo - Different Photo Types","
+    Attempt to create a pet with a photo using different photo types (e.g., PNG).
+
+    Precondition:
+    - User has a valid API key.
+    - Pet data is valid, but the photo type is different.
+
+    Expected result:
+    - Pet creation is successful, and the response returns HTTP status code 200.
+    "
+"passed","Sat Sep 16 02:55:51 CEST 2023","Sat Sep 16 02:55:52 CEST 2023","1540","TESTS","Get Pet List","TestGetPetList","","","Get Pet List with Valid Filter","
+    Get the list of pets with a valid filter as: my_pets.
+
+    Precondition:
+    - User has a valid API key.
+    - The filter 'my_pets' is valid.
+
+    Expected result:
+    - Response returns HTTP status code 200.
+    "
+"failed","Sat Sep 16 02:55:54 CEST 2023","Sat Sep 16 02:55:55 CEST 2023","203","TESTS","Get Pet List","TestGetPetList","","","Get Pet List with Invalid Filter","
+    Get the list of pets with an invalid filter as: ' ' (empty string).
+
+    Precondition:
+    - User has a valid API key.
+    - The filter is invalid (empty string).
+
+    Expected result:
+    - Response returns HTTP status code 422.
+    "
+"passed","Sat Sep 16 02:56:06 CEST 2023","Sat Sep 16 02:56:07 CEST 2023","865","TESTS","Create Pet (Simple)","TestCreatePetSimple","","","Create pet with valid information","
+    Create a pet with valid information and verify its presence in the list.
+
+    Precondition:
+    - User is authenticated and has a valid API key.
+
+    Expected result:
+    - A pet is successfully created, and its information is verified in the list.
+    "
+"passed","Sat Sep 16 02:55:53 CEST 2023","Sat Sep 16 02:55:54 CEST 2023","238","TESTS","Get Pet List","TestGetPetList","","","Get Pet List without API Key","
+    Get the list of pets without an API key and a valid filter as: my_pets.
+
+    Precondition:
+    - User does not provide an API key.
+    - The filter 'my_pets' is valid.
+
+    Expected result:
+    - Response returns HTTP status code 403.
+    "
+"failed","Sat Sep 16 02:56:03 CEST 2023","Sat Sep 16 02:56:04 CEST 2023","939","TESTS","Add Photo to Pet","TestAddPhotoToPet","","","Add Photo to Pet with Invalid Pet ID","
+    Attempt to add a photo to a non-existing pet.
+
+    Precondition:
+    - User is authenticated and has a valid API key.
+
+    Expected result:
+    - The request returns a 400 error code, and the photo is not added.
+    "
+"failed","Sat Sep 16 02:55:57 CEST 2023","Sat Sep 16 02:55:57 CEST 2023","240","TESTS","Get Pet List","TestGetPetList","","","Get Pet List with Invalid Filter","
+    Get the list of pets with an invalid filter as: ' ' (empty string).
+
+    Precondition:
+    - User has a valid API key.
+    - The filter is invalid (empty string).
+
+    Expected result:
+    - Response returns HTTP status code 422.
+    "
+"passed","Sat Sep 16 02:56:20 CEST 2023","Sat Sep 16 02:56:21 CEST 2023","1597","TESTS","Update Pet Information","TestUpdatePetInfo","","","Update Pet Information with Valid Data","
+    Update a pet's information with valid data.
+
+    Precondition:
+    - User is authenticated and has a valid API key.
+    - There is at least one pet in the list.
+
+    Expected result:
+    - The pet's information is successfully updated.
+    "
+"passed","Sat Sep 16 02:55:59 CEST 2023","Sat Sep 16 02:55:59 CEST 2023","197","TESTS","Get Pet List","TestGetPetList","","","Get Pet List with Other HTTP Methods","
+    Get the list of pets using HTTP methods other than GET (e.g., PUT, POST, DELETE).
+
+    Precondition:
+    - User has a valid API key.
+    - The filter 'my_pets' is valid.
+
+    Expected result:
+    - Response returns HTTP status code 405 for PUT and DELETE methods, and 400 for POST method.
+    "
+"passed","Sat Sep 16 02:55:44 CEST 2023","Sat Sep 16 02:55:45 CEST 2023","611","TESTS","Delete Pet","TestDeletePet","","","Delete first valid pet","
+    Delete the first valid pet in the list of my_pets.
+
+    Precondition:
+    - User is authenticated and has a valid API key.
+    - There is at least one pet in the list.
+
+    Expected result:
+    - The pet is successfully deleted, and the total number of pets is reduced by one.
+    "
+"passed","Sat Sep 16 02:56:05 CEST 2023","Sat Sep 16 02:56:06 CEST 2023","238","TESTS","Add Photo to Pet","TestAddPhotoToPet","","","Add Photo with Invalid Key","
+    Attempt to add a photo to a pet with an invalid API key.
+
+    Precondition:
+    - User is not authenticated.
+
+    Expected result:
+    - The request returns a 403 error code, and the photo is not added.
+    "
+"failed","Sat Sep 16 02:55:56 CEST 2023","Sat Sep 16 02:55:57 CEST 2023","233","TESTS","Get Pet List","TestGetPetList","","","Get Pet List with Invalid Filter","
+    Get the list of pets with an invalid filter as: ' ' (empty string).
+
+    Precondition:
+    - User has a valid API key.
+    - The filter is invalid (empty string).
+
+    Expected result:
+    - Response returns HTTP status code 422.
+    "
+"failed","Sat Sep 16 02:56:02 CEST 2023","Sat Sep 16 02:56:02 CEST 2023","940","TESTS","Add Photo to Pet","TestAddPhotoToPet","","","Add Photo to Pet with Existing Photo","
+    Attempt to add a photo to a pet that already has a photo.
+
+    Precondition:
+    - User is authenticated and has a valid API key.
+    - There is at least one pet in the list.
+    - The pet already has a photo.
+
+    Expected result:
+    - The request returns a 400 error code, and the photo is not added.
+    "
+"passed","Sat Sep 16 02:55:48 CEST 2023","Sat Sep 16 02:55:48 CEST 2023","241","TESTS","Get API Key","TestGetApiKey","","","Get API key using valid user values","
+    Get API Key using valid user values as: password, email.
+
+    Precondition:
+    - User successfully registered with a valid password and email.
+
+    Expected result:
+    - Get API key which should be used for other API methods.
+    "
+"passed","Sat Sep 16 02:56:25 CEST 2023","Sat Sep 16 02:56:25 CEST 2023","289","TESTS","Update Pet Information","TestUpdatePetInfo","","","Update Pet Information with None Pet ID","
+    Attempt to update a pet's information with a None pet ID.
+
+    Precondition:
+    - User is authenticated and has a valid API key.
+
+    Expected result:
+    - The request returns a 400 error code, and the pet's information is not updated.
+    "
+"passed","Sat Sep 16 02:56:08 CEST 2023","Sat Sep 16 02:56:08 CEST 2023","824","TESTS","Create Pet (Simple)","TestCreatePetSimple","","","Create pet with missing required fields","
+    Attempt to create a pet with missing required fields.
+
+    Precondition:
+    - User is authenticated and has a valid API key.
+
+    Expected result:
+    - The request returns a 400 error code.
+    "
+"passed","Sat Sep 16 02:56:13 CEST 2023","Sat Sep 16 02:56:13 CEST 2023","819","TESTS","Create Pet (Simple)","TestCreatePetSimple","","","Create pet with missing required fields","
+    Attempt to create a pet with missing required fields.
+
+    Precondition:
+    - User is authenticated and has a valid API key.
+
+    Expected result:
+    - The request returns a 400 error code.
+    "
+"passed","Sat Sep 16 02:56:21 CEST 2023","Sat Sep 16 02:56:23 CEST 2023","1612","TESTS","Update Pet Information","TestUpdatePetInfo","","","Update Pet Information with Random Pet Number","
+    Update a pet's information with a random pet number.
+
+    Precondition:
+    - User is authenticated and has a valid API key.
+
+    Expected result:
+    - The pet's information is successfully updated.
+    "
+"passed","Sat Sep 16 02:56:14 CEST 2023","Sat Sep 16 02:56:15 CEST 2023","228","TESTS","Create Pet (Simple)","TestCreatePetSimple","","","Create pet with invalid API key","
+    Attempt to create a pet with an invalid API key.
+
+    Precondition:
+    - User is not authenticated (invalid API key is provided).
+
+    Expected result:
+    - The request returns a 403 error code.
+    "
+"passed","Sat Sep 16 02:56:24 CEST 2023","Sat Sep 16 02:56:25 CEST 2023","278","TESTS","Update Pet Information","TestUpdatePetInfo","","","Update Pet Information with Invalid Pet ID","
+    Attempt to update a pet's information with an invalid pet ID.
+
+    Precondition:
+    - User is authenticated and has a valid API key.
+
+    Expected result:
+    - The request returns a 400 error code, and the pet's information is not updated.
+    "
+"failed","Sat Sep 16 02:55:47 CEST 2023","Sat Sep 16 02:55:47 CEST 2023","343","TESTS","Delete Pet","TestDeletePet","","","Delete pet with invalid ID","
+    Attempt to delete a pet with an invalid ID.
+
+    Precondition:
+    - User is authenticated and has a valid API key.
+    - Provide an invalid pet ID.
+
+    Expected result:
+    - The request returns a 403 error code, and the pet is not deleted.
+    "
+"passed","Sat Sep 16 02:55:53 CEST 2023","Sat Sep 16 02:55:53 CEST 2023","217","TESTS","Get Pet List","TestGetPetList","","","Get Pet List with Invalid API Key","
+    Get the list of pets with an invalid API key and a valid filter as: my_pets.
+
+    Precondition:
+    - User has an invalid API key.
+    - The filter 'my_pets' is valid.
+
+    Expected result:
+    - Response returns HTTP status code 403.
+    "
+"passed","Sat Sep 16 02:56:11 CEST 2023","Sat Sep 16 02:56:12 CEST 2023","846","TESTS","Create Pet (Simple)","TestCreatePetSimple","","","Create pet with missing required fields","
+    Attempt to create a pet with missing required fields.
+
+    Precondition:
+    - User is authenticated and has a valid API key.
+
+    Expected result:
+    - The request returns a 400 error code.
+    "
+"passed","Sat Sep 16 02:55:48 CEST 2023","Sat Sep 16 02:55:48 CEST 2023","219","TESTS","Get API Key","TestGetApiKey","","","Get API key using invalid user values","
+    Get API Key using invalid user values as: password, email.
+
+    Precondition:
+    - User uses invalid email and password, empty fields, or empty password field.
+
+    Expected result:
+    - Response returns error code 403.
+    "
+"failed","Sat Sep 16 02:55:55 CEST 2023","Sat Sep 16 02:55:56 CEST 2023","226","TESTS","Get Pet List","TestGetPetList","","","Get Pet List with Invalid Filter","
+    Get the list of pets with an invalid filter as: ' ' (empty string).
+
+    Precondition:
+    - User has a valid API key.
+    - The filter is invalid (empty string).
+
+    Expected result:
+    - Response returns HTTP status code 422.
+    "
+"failed","Sat Sep 16 02:55:57 CEST 2023","Sat Sep 16 02:55:58 CEST 2023","226","TESTS","Get Pet List","TestGetPetList","","","Get Pet List with Invalid Filter","
+    Get the list of pets with an invalid filter as: ' ' (empty string).
+
+    Precondition:
+    - User has a valid API key.
+    - The filter is invalid (empty string).
+
+    Expected result:
+    - Response returns HTTP status code 422.
+    "
+"passed","Sat Sep 16 02:56:00 CEST 2023","Sat Sep 16 02:56:01 CEST 2023","987","TESTS","Add Photo to Pet","TestAddPhotoToPet","","","Add Photo to Pet with Valid Photo","
+    Add a valid photo to an existing pet.
+
+    Precondition:
+    - User is authenticated and has a valid API key.
+    - There is at least one pet in the list.
+
+    Expected result:
+    - The photo is successfully added to the pet.
+    "
+"failed","Sat Sep 16 02:56:17 CEST 2023","Sat Sep 16 02:56:17 CEST 2023","251","TESTS","Create Pet","TestCreatePet","","","Create Pet with Photo - Empty Fields","
+    Attempt to create a pet with a photo with empty fields.
+
+    Precondition:
+    - User has a valid API key.
+    - Pet data contains empty fields.
+
+    Expected result:
+    - Pet creation is denied, and the response returns HTTP status code 400.
+    "
+"passed","Sat Sep 16 02:56:15 CEST 2023","Sat Sep 16 02:56:16 CEST 2023","220","TESTS","Create Pet","TestCreatePet","","","Create Pet with Photo - Invalid API Key","
+    Attempt to create a pet with a photo using an invalid API key.
+
+    Precondition:
+    - User has an invalid API key.
+    - Pet data is valid.
+
+    Expected result:
+    - Pet creation is denied, and the response returns HTTP status code 403.
+    "
+"passed","Sat Sep 16 02:55:58 CEST 2023","Sat Sep 16 02:55:59 CEST 2023","221","TESTS","Get Pet List","TestGetPetList","","","Get Pet List with Other HTTP Methods","
+    Get the list of pets using HTTP methods other than GET (e.g., PUT, POST, DELETE).
+
+    Precondition:
+    - User has a valid API key.
+    - The filter 'my_pets' is valid.
+
+    Expected result:
+    - Response returns HTTP status code 405 for PUT and DELETE methods, and 400 for POST method.
+    "
+"failed","Sat Sep 16 02:56:17 CEST 2023","Sat Sep 16 02:56:18 CEST 2023","294","TESTS","Create Pet","TestCreatePet","","","Create Pet with Photo - Empty Fields","
+    Attempt to create a pet with a photo with empty fields.
+
+    Precondition:
+    - User has a valid API key.
+    - Pet data contains empty fields.
+
+    Expected result:
+    - Pet creation is denied, and the response returns HTTP status code 400.
+    "
+"passed","Sat Sep 16 02:55:59 CEST 2023","Sat Sep 16 02:55:59 CEST 2023","195","TESTS","Get Pet List","TestGetPetList","","","Get Pet List with Other HTTP Methods","
+    Get the list of pets using HTTP methods other than GET (e.g., PUT, POST, DELETE).
+
+    Precondition:
+    - User has a valid API key.
+    - The filter 'my_pets' is valid.
+
+    Expected result:
+    - Response returns HTTP status code 405 for PUT and DELETE methods, and 400 for POST method.
+    "
+"failed","Sat Sep 16 02:56:05 CEST 2023","Sat Sep 16 02:56:05 CEST 2023","816","TESTS","Add Photo to Pet","TestAddPhotoToPet","","","Add Photo with Invalid Photo Type","
+    Attempt to add a photo with an invalid photo type to an existing pet.
+
+    Precondition:
+    - User is authenticated and has a valid API key.
+    - There is at least one pet in the list.
+
+    Expected result:
+    - The request returns a 400 error code, and the photo is not added.
+    "
