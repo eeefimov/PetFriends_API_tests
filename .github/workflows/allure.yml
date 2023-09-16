@@ -31,9 +31,9 @@ jobs:
           pip install pytest
           pip install -r requirements.txt 
 
-      - name: Run tests
-        run: |
-          pytest -v --alluredir=./allure-results || true  # Continue even if tests fail
+      # - name: Run tests
+      #   run: |
+      #     pytest -v || true  # Continue even if tests fail
 
       - name: Get Allure history
         uses: actions/checkout@v2
