@@ -1,0 +1,11 @@
+
+Pet is in the list
+https://petfriends.skillfactory.ru/api/pets/2bbb6b4d-60ee-4094-80e7-aefc979e2ba2
+
+ {'age': '8', 'animal_type': 'aWSgrfFgsf', 'created_at': '1694860237.103277', 'id': '2bbb6b4d-60ee-4094-80e7-aefc979e2ba2', 'name': 'cCzEmUBIfw', 'pet_photo': '', 'user_id': 'f9cb3212c6ea16115e81a25c10e4d8bb05427eb6a8578cb4d482ff28'} 
+
+200
+
+Pet is in the list
+{'age': '4', 'animal_type': 'BggOsUfcoS', 'created_at': '1694860237.103277', 'id': '2bbb6b4d-60ee-4094-80e7-aefc979e2ba2', 'name': 'zlWCtrqZVW', 'pet_photo': ''}
+{'age': '8', 'animal_type': 'aWSgrfFgsf', 'created_at': '1694860237.103277', 'id': '2bbb6b4d-60ee-4094-80e7-aefc979e2ba2', 'name': 'cCzEmUBIfw', 'pet_photo': ''}

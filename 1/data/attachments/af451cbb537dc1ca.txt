@@ -1,0 +1,8 @@
+
+Number of my pets was: 100
+
+Pet is in the list
+
+ {'age': '4', 'animal_type': 'qKnQSbXFtM', 'created_at': '1694825779.7635925', 'id': 'b8cab719-7549-4319-9b57-da241f027d91', 'name': 'QTzXbyFVNp', 'pet_photo': ''}
+
+ b8cab719-7549-4319-9b57-da241f027d91

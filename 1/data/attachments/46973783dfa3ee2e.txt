@@ -1,0 +1,15 @@
+
+ {'_id': '', 'age': '1', 'animal_type': 'RCZMeYjOnH', 'created_at': '1694860208.0094357', 'id': '8d8cca95-078f-4558-8f76-afa849f20023', 'name': 'NntBcXKTqv', 'pet_photo': '', 'user_id': 'f9cb3212c6ea16115e81a25c10e4d8bb05427eb6a8578cb4d482ff28'} 
+
+200
+
+Pet is in the list
+New pet is in the list: {'age': '6', 'animal_type': 'CIMVPOhVfQ', 'created_at': '1694860208.4180405', 'id': '3a49e55d-fbd1-42be-8c54-74a7416a86c3', 'name': 'WGPeMxinmm', 'pet_photo': ''}
+
+Number of my pets was: 100
+
+Pet is in the list
+
+ {'age': '6', 'animal_type': 'CIMVPOhVfQ', 'created_at': '1694860208.4180405', 'id': '3a49e55d-fbd1-42be-8c54-74a7416a86c3', 'name': 'WGPeMxinmm', 'pet_photo': ''}
+
+ 3a49e55d-fbd1-42be-8c54-74a7416a86c3
