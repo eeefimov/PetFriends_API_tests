@@ -6,7 +6,7 @@ import random
 import string
 import uuid
 
-pets = PetFriends()
+#pets = PetFriends()
 
 
 def randomize_string(number: int):
