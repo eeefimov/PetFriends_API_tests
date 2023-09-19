@@ -1,12 +1,8 @@
 import pytest
 import os
 from TESTS.settings import valid_password, valid_email
-from API_Logic.PetFriends import PetFriends
 import random
 import string
-import uuid
-
-#pets = PetFriends()
 
 
 def randomize_string(number: int):
@@ -16,7 +12,7 @@ def randomize_string(number: int):
 
 
 def randomize_id():
-    random_id = "qweweq"#str(uuid.uuid4())
+    random_id = "qweweq"
     return random_id
 
 
@@ -39,6 +35,7 @@ def chinese_chars():
 
 def special_chars():
     return '|\\/!@#$%^&*()-_=+`~?"№;:[]{}'
+
 
 # Authentication Positive Test Parameters
 params_auth_positive = [
@@ -80,12 +77,12 @@ params_filter_invalid = [
 ]
 
 # Add Pet No Photo Valid Test Parameters
-params_add_pet_nophoto_valid = [
+params_add_pet_no_photo_valid = [
     pytest.param(randomize_string(10), randomize_string(10), (randomize_number(10)), 200, id="Valid values")
 ]
 
 # Add Pet No Photo Invalid Key Test Parameters
-params_add_pet_nophoto_invalid_key = [
+params_add_pet_no_photo_invalid_key = [
     pytest.param(randomize_string(10), randomize_string(10), (randomize_number(10)), 403, id="Valid values")
 ]
 
@@ -127,7 +124,8 @@ params_add_pet_with_photo_valid = [
 
 # Add Pet Photo Valid Test Parameters
 params_add_pet_photo_valid = [
-    pytest.param(randomize_string(10), randomize_string(10), str(randomize_number(10)), valid_pet_photo, 200, id="Valid data")
+    pytest.param(randomize_string(10), randomize_string(10),
+                 str(randomize_number(10)), valid_pet_photo, 200, id="Valid data")
 ]
 params_add_pet_empty_fields = [
     pytest.param(randomize_string(10), randomize_string(10), None, 400, id="None age"),
@@ -146,13 +144,34 @@ params_add_pet_photo_empty_fields = [
 
 # Add Pet Photo Type Test Parameters
 params_add_pet_photo_type = [
-    pytest.param(randomize_string(10), randomize_string(10), str(randomize_number(10)), invalid_pet_photo_txt, 400, id="Photo = txt"),
-    pytest.param(randomize_string(10), randomize_string(10), str(randomize_number(10)), invalid_pet_photo_broken_jpeg, 400, id="Photo = broken jpeg"),
-    pytest.param(randomize_string(10), randomize_string(10), str(randomize_number(10)), valid_pet_photo_png, 200, id="Photo = png")
+    pytest.param(randomize_string(10),
+                 randomize_string(10),
+                 str(randomize_number(10)),
+                 invalid_pet_photo_txt,
+                 400, id="Photo = txt"),
+    pytest.param(randomize_string(10),
+                 randomize_string(10),
+                 str(randomize_number(10)),
+                 invalid_pet_photo_broken_jpeg,
+                 400, id="Photo = broken jpeg"),
+    pytest.param(randomize_string(10),
+                 randomize_string(10),
+                 str(randomize_number(10)),
+                 valid_pet_photo_png,
+                 200, id="Photo = png")
 ]
 
 params_add_pet_check_string_fields = [
-    pytest.param(randomize_string(1), randomize_string(1), randomize_number(10), id="1 char strings; Valid {age} "),
-    pytest.param(randomize_string(255), randomize_string(255), randomize_number(10), id="255 char strings; Valid {age} "),
-    pytest.param(randomize_string(1000), randomize_string(1000), randomize_number(10), id="1000 char strings; Valid {age} ")
+    pytest.param(randomize_string(1),
+                 randomize_string(1),
+                 randomize_number(10),
+                 id="1 char strings; Valid {age} "),
+    pytest.param(randomize_string(255),
+                 randomize_string(255),
+                 randomize_number(10),
+                 id="255 char strings; Valid {age} "),
+    pytest.param(randomize_string(1000),
+                 randomize_string(1000),
+                 randomize_number(10),
+                 id="1000 char strings; Valid {age} ")
 ]

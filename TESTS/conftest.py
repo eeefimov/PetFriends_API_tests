@@ -30,8 +30,7 @@ def setup_key():
     """
     pets_f = PetFriends()
     pets_f.get_api_key(valid_email, valid_password)
-    header = {}
-    header["auth_key"] = pets_f.auth_key["key"]
+    header = {"auth_key": pets_f.auth_key["key"]}
     yield header
 
 
@@ -42,8 +41,7 @@ def setup_invalid_key():
     """
     pets_f = PetFriends()
     pets_f.get_api_key(valid_email, valid_password)
-    header = {}
-    header["auth_key"] = "invalid_key"
+    header = {"auth_key": pets_f.auth_key["key"]}
     yield header
 
 
@@ -52,8 +50,8 @@ def setup_invalid_id():
     """
     Fixture to set up an invalid pet ID for negative testing.
     """
-    id = randomize_id()
-    yield id
+    pet_id = randomize_id()
+    yield pet_id
 
 
 @pytest.fixture(scope="function")
@@ -63,12 +61,8 @@ def delete_pet_after():
     """
     pets_f = PetFriends()
     pets_f.get_api_key(valid_email, valid_password)
-    header = {}
-    header["auth_key"] = pets_f.auth_key["key"]
+    header = {"auth_key": pets_f.auth_key["key"]}
 
     yield header
 
     dl(header, None)
-
-
-

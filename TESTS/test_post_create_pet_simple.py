@@ -1,7 +1,7 @@
 import allure
 import pytest
 from API_Logic.CreatePetSimple import PetFriendsCreatePetSimple
-from TESTS.params import params_add_pet_nophoto_valid, params_add_pet_empty_fields, params_add_pet_nophoto_invalid_key
+from TESTS.params import params_add_pet_no_photo_valid, params_add_pet_empty_fields, params_add_pet_no_photo_invalid_key
 
 pf = PetFriendsCreatePetSimple()
 
@@ -20,7 +20,7 @@ class TestCreatePetSimple:
     Expected result:
     - A pet is successfully created, and its information is verified in the list.
     """)
-    @pytest.mark.parametrize("name, animal_type, age, expected", params_add_pet_nophoto_valid)
+    @pytest.mark.parametrize("name, animal_type, age, expected", params_add_pet_no_photo_valid)
     def test_create_pet_simple_valid(self, delete_pet_after, name, animal_type, age, expected):
         pf.create_pet_simple(delete_pet_after, name, animal_type, age, expected)
 
@@ -48,6 +48,6 @@ class TestCreatePetSimple:
     Expected result:
     - The request returns a 403 error code.
     """)
-    @pytest.mark.parametrize("name, animal_type, age, expected", params_add_pet_nophoto_invalid_key)
+    @pytest.mark.parametrize("name, animal_type, age, expected", params_add_pet_no_photo_invalid_key)
     def test_create_pet_simple_invalid_key(self, setup_invalid_key, name, animal_type, age, expected):
         pf.create_pet_invalid_key(setup_invalid_key, name, animal_type, age, expected)

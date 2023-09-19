@@ -1,6 +1,5 @@
 from API_Logic.DeletePet import PetFriendsDeletePet
 import allure
-import pytest
 
 pf = PetFriendsDeletePet()
 
@@ -64,4 +63,3 @@ class TestDeletePet:
     """)
     def test_delete_pet_invalid_key(self, setup_invalid_key):
         pf.delete_pet_invalid_id(setup_invalid_key, None)
-

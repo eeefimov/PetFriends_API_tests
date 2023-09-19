@@ -1,6 +1,5 @@
 import allure
 import pytest
-from TESTS.settings import valid_email
 from API_Logic.GetKey import PetFriendsGetKey
 from TESTS.params import params_auth_positive, params_auth_negative
 
@@ -44,5 +43,3 @@ class TestGetApiKey:
     def test_get_api_key_invalid(self, email, password, expect):
         status, result = pf.get_api_key(email, password)
         assert status == expect
-
-

@@ -1,3 +1,5 @@
+from typing import Union, Any
+
 import requests
 import json
 from requests_toolbelt.multipart.encoder import MultipartEncoder
@@ -28,25 +30,25 @@ class PetFriends:
 
         return status, result
 
-    def assert_and_print(self, status, result, expected):
+    @staticmethod
+    def assert_and_print(status, result, expected):
         assert status == expected
         print("\n", result, "\n")
         print(status)
 
-    def get_list_of_pets(self, method, filter, header) -> str:
-        filter = {"filter": filter}
+    def get_list_of_pets(self, method, fltr, header) -> tuple[int, Union[str, Any]]:
+        fltr = {"filter": fltr}
         api_url = self.main_url + str("api/pets")
         req = None
         if method == "GET":
-            req = requests.get(api_url, headers=header, params=filter)
+            req = requests.get(api_url, headers=header, params=fltr)
         elif method == "PUT":
-            req = requests.put(api_url, headers=self.header, params=filter)
+            req = requests.put(api_url, headers=self.header, params=fltr)
         elif method == "POST":
-            req = requests.post(api_url, headers=self.header, params=filter)
+            req = requests.post(api_url, headers=self.header, params=fltr)
         elif method == "DELETE":
             req = requests.delete(api_url, headers=self.header, params=filter)
         status = req.status_code
-        result = None
         try:
             result = req.json()
         except json.decoder.JSONDecodeError:
@@ -54,7 +56,8 @@ class PetFriends:
 
         return status, result
 
-    def check_pet_is_in_the_list(self, result, name, age, animal_type):
+    @staticmethod
+    def check_pet_is_in_the_list(result, name, age, animal_type):
         pet_data = result.get('pets')
         if pet_data:
             for i in range(len(pet_data)):
@@ -82,7 +85,6 @@ class PetFriends:
         data = {"name": nm, "animal_type": at, "age": ag}
         req = requests.post(api_url, headers=hd, data=data)
         status = req.status_code
-        result = None
         try:
             result = req.json()
         except json.decoder.JSONDecodeError:
@@ -101,7 +103,6 @@ class PetFriends:
         headers = {'auth_key': hdd, 'Content-Type': data.content_type}
         req = requests.post(api_url, headers=headers, data=data)
         status = req.status_code
-        result = None
         try:
             result = req.json()
         except json.decoder.JSONDecodeError:
@@ -116,7 +117,6 @@ class PetFriends:
         headers = {'auth_key': hdd, 'Content-Type': data.content_type}
         req = requests.post(api_url, headers=headers, data=data)
         status = req.status_code
-        result = ""
         try:
             result = req.json()
         except json.decoder.JSONDecodeError:
@@ -131,7 +131,6 @@ class PetFriends:
         headers = {'auth_key': auth_key["auth_key"]}
         res = requests.put(api_url, headers=headers, data=data)
         status = res.status_code
-        result = ""
         try:
             result = res.json()
         except json.decoder.JSONDecodeError:

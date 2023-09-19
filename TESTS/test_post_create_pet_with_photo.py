@@ -25,7 +25,6 @@ class TestCreatePet:
     def test_create_pet_with_photo_valid(self, setup_key, name, animal_type, age, photo, expected):
         pf.create_pet(setup_key, name, animal_type, age, photo, expected)
 
-
     @allure.title("Create Pet with Photo - Invalid API Key")
     @allure.description("""
     Attempt to create a pet with a photo using an invalid API key.
@@ -71,4 +70,3 @@ class TestCreatePet:
     @pytest.mark.parametrize("name, animal_type, age, photo, expected", params_add_pet_photo_type)
     def test_create_pet_with_photo_different_type(self, setup_key, name, animal_type, age, photo, expected):
         pf.create_pet(setup_key, name, animal_type, age, photo, expected)
-

@@ -1,4 +1,3 @@
-import json
 from API_Logic.GetList import PetFriendsGetList
 
 
@@ -13,11 +12,11 @@ class PetFriendsCreatePetSimple(PetFriendsGetList):
         Precondition:
         - User is authenticated and has a valid API key.
 
-        :param setup_key: Authentication key.
-        :param name: Pet's name.
-        :param animal_type: Pet's animal type.
-        :param age: Pet's age.
-        :param expected: Expected HTTP status code.
+        param setup_key: Authentication key.
+        param name: Pet's name.
+        param animal_type: Pet's animal type.
+        param age: Pet's age.
+        param expected: Expected HTTP status code.
         """
         status, result = self.post_pet_without_photo(setup_key, name, animal_type, age)
         self.assert_and_print(status, result, expected)
@@ -34,11 +33,11 @@ class PetFriendsCreatePetSimple(PetFriendsGetList):
         Precondition:
         - User is not authenticated (invalid API key is provided).
 
-        :param setup_key: Invalid authentication key.
-        :param name: Pet's name.
-        :param animal_type: Pet's animal type.
-        :param age: Pet's age.
-        :param expected: Expected HTTP status code.
+        param setup_key: Invalid authentication key.
+        param name: Pet's name.
+        param animal_type: Pet's animal type.
+        param age: Pet's age.
+        param expected: Expected HTTP status code.
         """
         status, result = self.post_pet_without_photo(setup_key, name, animal_type, age)
 

@@ -1,4 +1,3 @@
-import pytest
 from API_Logic.AddPetPhoto import PetFriendsAddPhoto
 import allure
 from TESTS.params import valid_pet_photo, invalid_pet_photo_txt

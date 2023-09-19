@@ -15,7 +15,8 @@ class PetFriendsDeletePet(PetFriendsGetList):
         print(f"\nNumber of my pets was: {num_pets_was}")
 
         if num is None:
-            pet = self.check_pet_is_in_the_list(result, pet_data[0]['name'], pet_data[0]['age'], pet_data[0]['animal_type'])
+            pet = self.check_pet_is_in_the_list(result, pet_data[0]['name'], pet_data[0]['age'],
+                                                pet_data[0]['animal_type'])
         else:
             pet = self.check_pet_is_in_the_list(result, pet_data[num]['name'], pet_data[num]['age'],
                                                 pet_data[num]['animal_type'])
@@ -48,6 +49,7 @@ class PetFriendsDeletePet(PetFriendsGetList):
         print("\n", status)
         print(setup_id)
         assert status == 403
+
 
 PTD = PetFriendsDeletePet()
 dl = PTD.delete_first_valid_pet
