@@ -46,8 +46,6 @@ class PetFriends:
             req = requests.put(api_url, headers=self.header, params=fltr)
         elif method == "POST":
             req = requests.post(api_url, headers=self.header, params=fltr)
-        elif method == "DELETE":
-            req = requests.delete(api_url, headers=self.header, params=filter)
         status = req.status_code
         try:
             result = req.json()

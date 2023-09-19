@@ -59,7 +59,6 @@ params_filter_valid = [
 # Filter Methods Test Parameters
 params_filter_methods = [
     pytest.param("my_pets", 405, "PUT", id="Valid filter: PUT"),
-    pytest.param("my_pets", 405, "DELETE", id="Valid filter: DELETE"),
     pytest.param("my_pets", 400, "POST", id="Valid filter: POST")
 ]
 
