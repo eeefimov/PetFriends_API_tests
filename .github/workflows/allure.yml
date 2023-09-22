@@ -14,11 +14,6 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
 
-      # - name: Run Test
-      #   if: always()
-      #   run: mvn package
-      #   continue-on-error: true
-
       - name: Get Allure history
         uses: actions/checkout@v2
         if: always()
